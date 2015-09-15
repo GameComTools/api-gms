@@ -1,0 +1,15 @@
+{
+  "name"             : "api-gms",
+  "cwd"              : "/srv/api-gms",
+  "script"           : "node_modules/actionhero/bin/actionhero",
+  "args"             : ["start"],
+  "error_file"       : "/srv/api-gms/log/pm2.error.log",
+  "out_file"         : "/srv/api-gms/log/pm2.out.log",
+  "pid_file"         : "/srv/api-gms/pids/pm2.pid",
+  "max_restarts"     : 5,
+  "merge_logs"       : true,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 8101
+  }
+}
